@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/integral/integral",
+    "pages/shop_index/shop_index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小积分",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#09BB07",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "礼物兑换",
+        "iconPath": "image/tabbar/liwu.png",
+        "selectedIconPath": "image/tabbar/liwu_s.png"
+      },
+      {
+        "pagePath": "pages/integral/integral",
+        "text": "积分导入",
+        "iconPath": "image/tabbar/jifen.png",
+        "selectedIconPath": "image/tabbar/jifen_s.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "个人中心",
+        "iconPath": "image/tabbar/wo.png",
+        "selectedIconPath": "image/tabbar/wo_s.png"
+      }
+    ]
+  }
+}

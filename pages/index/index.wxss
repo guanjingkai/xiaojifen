@@ -1,0 +1,97 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+
+}
+
+page,
+.page,
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-navbar{
+  background: #ffffff;
+}
+.weui-tab__content{
+    text-align: center;
+}
+/* 商品列表 */
+.gooditem{
+  background: #ffffff;
+  display: block;
+  margin-right: 8px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+  border-radius:8px 
+}
+.gooditem_shop{
+  display:block;
+  width: 100%;
+  height: 96px;
+  background: #ffffff;
+}
+.gooditem_goodslist{
+  display: block;
+  overflow: hidden;
+  background: #fcfcfc;
+}
+.gooditem_logo ,.gooditem_logo image{
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+.gooditem_logo{
+  float: left;
+  margin: 8px;
+}
+.gooditem_info{
+  float: left;
+  margin: 8px;
+}
+.shop_title, .shop_add{
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  display: block;
+}
+.goods{
+  display: block;
+  width: 100%;
+  height: 32px;
+}
+.goods_title{
+  height: 32px;
+  line-height: 32px;
+  text-align: left;
+  display: block;
+  float: left;
+  margin-left: 8px;
+}
+.goods_integral{
+  height: 32px;
+  line-height: 32px;
+  text-align: right;
+  display: block;
+  float: right;
+  margin-right: 8px;
+}
