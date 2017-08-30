@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/integral/integral",
-    "pages/shop_index/shop_index"
+    "pages/shop_index/shop_index",
+    "pages/my_card/my_card"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,8 +25,8 @@
         "selectedIconPath": "image/tabbar/liwu_s.png"
       },
       {
-        "pagePath": "pages/integral/integral",
-        "text": "积分导入",
+        "pagePath": "pages/my_card/my_card",
+        "text": "我的卡券",
         "iconPath": "image/tabbar/jifen.png",
         "selectedIconPath": "image/tabbar/jifen_s.png"
       },

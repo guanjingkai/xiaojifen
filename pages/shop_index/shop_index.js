@@ -1,6 +1,7 @@
-var base64 = require("../images/base64");
-
 Page({
+  data: {
+    bigGoodsList: [{}, {}, {}, {}]
+  },
   onLoad: function () {
     this.setData({
       icon20: base64.icon20,

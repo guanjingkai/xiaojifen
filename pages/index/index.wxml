@@ -1,10 +1,119 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="usermotto">
-    <text class="user-motto">11</text>
+<!--搜索  -->
+<view class="weui-search-bar">
+  <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+      <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+        <icon type="clear" size="14"></icon>
+      </view>
+    </view>
+    <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索</view>
+                </label>
+  </view>
+  <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+</view>
+<!--轮播图  -->
+<swiper class="slide" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+
+  <swiper-item class="slide-item" wx:for="{{imgUrls}}">
+    <view class="slide-image-box">
+      <image src="{{item}}" class="slide-image" />
+    </view>
+    <view class="slide-title">
+      <text class="slide-title-1">新用户专享</text>
+      <text class="slide-title-2">限时1惠币兑换拿铁大杯</text>
+    </view>
+  </swiper-item>
+
+</swiper>
+<!--快捷入口  -->
+<view class="quick">
+  <view class="study">
+    <view class="qucik-box">新手教程</view>
+  </view>
+  <view class="my-huib">
+    <view class="qucik-box">0.00惠币</view>
+  </view>
+  <view class="bind-fen" bindtap="openIntegral">
+    <view class="qucik-box">导入积分</view>
+  </view>
+</view>
+<view class="bigTitle" style="margin-top:16px;">
+  <view class="bigTitleV">
+    <text class="bigTitle1">好货无限</text>
+    <text class="bigTitle2">优质兑换推荐</text>
+  </view>
+  <view class="bigTitleM">
+    更多>
   </view>
 </view>
 <view class="page">
+
+
+
+  <scroll-view class="bigGoodsBox" scroll-x="true">
+    <view class="bigGoods" wx:for="{{bigGoodsList}}">
+      <view class="bigImage">
+        <image src="../../image/demo/xingbake.jpeg"></image>
+      </view>
+      <view class="bigGoodsInfo">
+        <text class="bigGoodsTitle">星巴克拿铁大杯</text>
+        <text>100积分</text><text>(市价:36元)</text>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="bigTitle">
+    <view class="bigTitleV">
+      <text class="bigTitle1">猜你喜欢</text>
+      <text class="bigTitle2">这里都是你的最爱</text>
+    </view>
+    <view class="bigTitleM">
+      更多>
+    </view>
+  </view>
+  <scroll-view class="bigGoodsBox" scroll-x="true">
+    <view class="bigGoods" wx:for="{{bigGoodsList}}">
+      <view class="bigImage">
+        <image src="../../image/demo/xingbake.jpeg"></image>
+      </view>
+      <view class="bigGoodsInfo">
+        <text class="bigGoodsTitle">星巴克拿铁大杯</text>
+        <text>100积分</text><text>(市价:36元)</text>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="bigTitle">
+    <view class="bigTitleV">
+      <text class="bigTitle1">附近宝贝</text>
+      <text class="bigTitle2">你就是宇宙中心</text>
+    </view>
+  </view>
+  <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+    <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">
+        <view>实时搜索文本</view>
+      </view>
+    </navigator>
+    <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">
+        <view>实时搜索文本</view>
+      </view>
+    </navigator>
+    <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">
+        <view>实时搜索文本</view>
+      </view>
+    </navigator>
+    <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">
+        <view>实时搜索文本</view>
+      </view>
+    </navigator>
+  </view>
   <view class="page__bd">
     <view class="weui-tab">
       <view class="weui-navbar">
@@ -20,17 +129,20 @@
           <view class="gooditem" wx:for="{{shopList}}">
             <view class="gooditem_shop" bindtap="openShopIndex">
               <view class="gooditem_logo">
-                <image src="../../image/demo/ele.jpeg"></image>
+                <image src="../../image/demo/coffee.jpeg"></image>
               </view>
               <view class="gooditem_info">
-                <text class="shop_title">饿了么</text>
+                <text class="shop_title">星巴克拿铁大杯</text>
                 <text class="shop_add">朝阳区静安中心一楼</text>
+              </view>
+              <view class="gooditem_lbs">
+                <text class="shop_title">100m</text>
               </view>
             </view>
             <view class="gooditem_goodslist">
               <view class="goods" wx:for="{{goodsList}}">
-                <text class="goods_title">饿了么</text>
-                <text class="goods_integral">0元+100积分</text>
+                <text class="goods_title">由星巴克提供</text>
+                <text class="goods_integral">100惠币</text>
               </view>
             </view>
           </view>
