@@ -2,6 +2,7 @@ page,
 .page,
 .page__bd{
     height: 100%;
+    background: #efefef;
 }
 .page__bd{
     padding-bottom: 0;
@@ -9,14 +10,11 @@ page,
 .weui-tab__content{
     padding-top: 16px;
     text-align: center;
-    background: #fcfcfc;
+    background: #efefef;
 }
 .gooditem{
   display: block;
-  margin-right: 8px;
-  margin-left: 8px;
-  margin-bottom: 16px;
-  width: 96%;
+  width: 100%;
   border-radius: 8px;
   overflow:hidden;
 }
@@ -24,7 +22,7 @@ page,
   display:block;
   width: 100%;
   height: 80px;
-  background: #DEF2FF;
+  background: #74CEFD;
 }
 .gooditem_goodslist{
   display: block;
@@ -43,12 +41,14 @@ page,
 .gooditem_info{
   float: left;
   margin: 8px;
+  color:#ffffff;
 }
 .gooditem_lbs{
   float: right;
   margin: 8px;
-  width: 120px;
+  width: 50px;
   text-align: right;
+  color:#fff;
 }
 .shop_title, .shop_add{
   height: 32px;
@@ -65,11 +65,11 @@ page,
 .goods{
   display: block;
   width: 100%;
-  height: 32px;
+  height: 30px;
 }
 .goods_title{
-  height: 32px;
-  line-height: 32px;
+  height: 30px;
+  line-height: 30px;
   text-align: left;
   display: block;
   float: left;
@@ -78,18 +78,26 @@ page,
   color: #ccc;
 }
 .goods_integral{
-  height: 32px;
-  line-height: 32px;
+  height: 30px;
+  line-height: 30px;
   text-align: right;
   display: block;
   float: right;
   margin-right: 8px;
+  color: #F76260;
 }
-.goods_integral{
-  height: 32px;
-  line-height: 32px;
-  text-align: right;
-  display: block;
-  float: right;
-  margin-right: 8px;
+/*quan*/
+.quan-box{
+  width: 96%;
+  height: 112px;
+  display: flex;
+  margin: 8px auto;
+}
+.quan-type{
+  width: 56px;
+  height: 112px;
+}
+.quan-icon{
+  width: 56px;
+  height: 112px;
 }
