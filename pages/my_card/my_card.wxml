@@ -1,64 +1,82 @@
 <view class="page">
-    <view class="page__bd">
-        <view class="weui-search-bar">
-            <view class="weui-search-bar__form">
-                <view class="weui-search-bar__box">
-                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
-                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
-                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
-                        <icon type="clear" size="14"></icon>
-                    </view>
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+            <view class="gooditem" wx:for="{{shopList}}">
+              <view class="gooditem_shop" bindtap="openShopIndex">
+                <view class="gooditem_logo">
+                  <image src="../../image/demo/coffee.jpeg"></image>
                 </view>
-                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
-                    <icon class="weui-icon-search" type="search" size="14"></icon>
-                    <view class="weui-search-bar__text">搜索</view>
-                </label>
+                <view class="gooditem_info">
+                  <text class="shop_title">拿铁开发大杯</text>
+                  <text class="shop_add">北京朝阳维亚大厦1楼</text>
+                </view>
+                <view class="gooditem_lbs">
+                  星巴克
+                </view>
+              </view>
+              <view class="gooditem_goodslist">
+                <view class="goods" wx:for="{{goodsList}}">
+                  <text class="goods_title">有效期2017.06.01 - 2017.12.31</text>
+                  <text class="goods_integral"></text>
+                </view>
+              </view>
             </view>
-            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
         </view>
-        <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+          <view class="gooditem" wx:for="{{shopList}}">
+              <view class="gooditem_shop" bindtap="openShopIndex">
+                <view class="gooditem_logo">
+                  <image src="../../image/demo/coffee.jpeg"></image>
                 </view>
-            </navigator>
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
+                <view class="gooditem_info">
+                  <text class="shop_title">拿铁开发中杯</text>
+                  <text class="shop_add">北京朝阳维亚大厦2楼</text>
                 </view>
-            </navigator>
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
+                <view class="gooditem_lbs">
+                  星巴克
                 </view>
-            </navigator>
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
+              </view>
+              <view class="gooditem_goodslist">
+                <view class="goods" wx:for="{{goodsList}}">
+                  <text class="goods_title">有效期2017.06.01 - 2017.12.31</text>
+                  <text class="goods_integral"></text>
                 </view>
-            </navigator>
+              </view>
+            </view>
         </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+          <view class="gooditem" wx:for="{{shopList}}">
+              <view class="gooditem_shop" bindtap="openShopIndex">
+                <view class="gooditem_logo">
+                  <image src="../../image/demo/coffee.jpeg"></image>
+                </view>
+                <view class="gooditem_info">
+                  <text class="shop_title">拿铁开发小杯</text>
+                  <text class="shop_add">北京朝阳维亚大厦3楼</text>
+                </view>
+                <view class="gooditem_lbs">
+                  星巴克
+                </view>
+              </view>
+              <view class="gooditem_goodslist">
+                <view class="goods" wx:for="{{goodsList}}">
+                  <text class="goods_title">有效期2017.06.01 - 2017.12.31</text>
+                  <text class="goods_integral"></text>
+                </view>
+              </view>
+            </view>
+        </view>
+      </view>
     </view>
-    <view class="page__bd">
-        <view class="gooditem" wx:for="{{shopList}}">
-            <view class="gooditem_shop" bindtap="openShopIndex">
-              <view class="gooditem_logo">
-                <image src="../../image/demo/ele.jpeg"></image>
-              </view>
-              <view class="gooditem_info">
-                <text class="shop_title">饿了么</text>
-                <text class="shop_add">www.eleme.com</text>
-              </view>
-              <view class="gooditem_lbs">
-                <text class="shop_add">100积分=1惠币</text>
-              </view>
-            </view>
-            <view class="gooditem_goodslist">
-              <view class="goods" wx:for="{{goodsList}}">
-                <text class="goods_title">已有7109人兑换了141918惠币</text>
-                <text class="goods_integral"></text>
-              </view>
-            </view>
-        </view>
-    </view>
+  </view>
 </view>

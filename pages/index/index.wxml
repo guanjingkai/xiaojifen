@@ -1,6 +1,7 @@
 <!--index.wxml-->
 <!--搜索  -->
 <view class="weui-search-bar">
+  <view class="select-city" bindtap="hideInput">北京</view>
   <view class="weui-search-bar__form">
     <view class="weui-search-bar__box">
       <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
@@ -19,7 +20,7 @@
 <!--轮播图  -->
 <swiper class="slide" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
 
-  <swiper-item class="slide-item" wx:for="{{imgUrls}}">
+  <swiper-item class="slide-item" wx:for="{{imgUrls}}" bindtap="openShopIndex">
     <view class="slide-image-box">
       <image src="{{item}}" class="slide-image" />
     </view>
@@ -56,7 +57,7 @@
 
 
   <scroll-view class="bigGoodsBox" scroll-x="true">
-    <view class="bigGoods" wx:for="{{bigGoodsList}}">
+    <view class="bigGoods" wx:for="{{bigGoodsList}}" bindtap="openShopIndex">
       <view class="bigImage">
         <image src="../../image/demo/xingbake.jpeg"></image>
       </view>
@@ -76,7 +77,7 @@
     </view>
   </view>
   <scroll-view class="bigGoodsBox" scroll-x="true">
-    <view class="bigGoods" wx:for="{{bigGoodsList}}">
+    <view class="bigGoods" wx:for="{{bigGoodsList}}" bindtap="openShopIndex">
       <view class="bigImage">
         <image src="../../image/demo/xingbake.jpeg"></image>
       </view>

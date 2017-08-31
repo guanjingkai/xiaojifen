@@ -1,29 +1,29 @@
+var sliderWidth = 96; // 需要设置slider的宽度，用于计算中间位置
+
 Page({
   data: {
-    inputShowed: false,
-    inputVal: "",
+    tabs: ["未使用", "已使用",'已过期'],
+    activeIndex: 0,
+    sliderOffset: 0,
     shopList: [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
-    goodsList: [{}]
+    goodsList: [{}],
+    sliderLeft: 0
   },
-  showInput: function () {
-    this.setData({
-      inputShowed: true
+  onLoad: function () {
+    var that = this;
+    wx.getSystemInfo({
+      success: function (res) {
+        that.setData({
+          sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 2,
+          sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
+        });
+      }
     });
   },
-  hideInput: function () {
+  tabClick: function (e) {
     this.setData({
-      inputVal: "",
-      inputShowed: false
-    });
-  },
-  clearInput: function () {
-    this.setData({
-      inputVal: ""
-    });
-  },
-  inputTyping: function (e) {
-    this.setData({
-      inputVal: e.detail.value
+      sliderOffset: e.currentTarget.offsetLeft,
+      activeIndex: e.currentTarget.id
     });
   }
 });

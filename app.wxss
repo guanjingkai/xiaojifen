@@ -153,3 +153,6 @@ page{
   margin-left: 8px;
   display: block;
 }
+.weui-navbar{
+  background: #ffffff;
+}

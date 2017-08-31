@@ -2,6 +2,7 @@ Page({
   data: {
     inputShowed: false,
     inputVal: "",
+    shopListo: [{}, {}, {}, {}],
     shopList: [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
     goodsList: [{}]
   },

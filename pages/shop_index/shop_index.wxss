@@ -42,3 +42,9 @@
   background: red;
   color: #fff;
 }
+.goodInfo{
+  width: 100%;
+}
+.goodInfoM{
+  width: 100%;
+}
