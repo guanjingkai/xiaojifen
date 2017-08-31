@@ -85,6 +85,7 @@ page,
   float: right;
   margin-right: 8px;
   color: #F76260;
+  font-size:12px;
 }
 /*quan*/
 .quan-box{
