@@ -1,0 +1,29 @@
+<!--show_card.wxml-->
+<view class="page">
+  <view class="card-box">
+    <view class="card-haeder">
+      <view class="card-logo">
+        <image src="../../image/demo/xingbake.jpeg"></image>
+      </view>
+      <view class="shop-title">
+        星巴克
+      </view>
+      <view class="quan-share">
+        分享
+      </view>
+      <view class="quan-area">
+        全国通用
+      </view>
+      
+    </view>
+    <view class="card-line">
+      <view class="line-l"></view>
+      <view class="line"></view>
+      <view class="line-r"></view>
+    </view>
+    <view class="qcode">
+    <image src="../../image/demo/qcode.png"></image>
+  </view>
+  </view>
+  
+</view>

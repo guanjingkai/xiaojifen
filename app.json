@@ -4,7 +4,9 @@
     "pages/logs/logs",
     "pages/integral/integral",
     "pages/shop_index/shop_index",
-    "pages/my_card/my_card"
+    "pages/my_card/my_card",
+    "pages/msg_success/msg_success",
+    "pages/show_card/show_card"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -21,6 +23,12 @@
       {
         "pagePath": "pages/index/index",
         "text": "礼物兑换",
+        "iconPath": "image/tabbar/liwu.png",
+        "selectedIconPath": "image/tabbar/liwu_s.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "许愿池",
         "iconPath": "image/tabbar/liwu.png",
         "selectedIconPath": "image/tabbar/liwu_s.png"
       },

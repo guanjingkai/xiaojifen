@@ -58,8 +58,8 @@
 </view>
 <view class="" style="height:56px;width:100%;"> </view>
 <view class="footer">
-  <view class="iconbutton">收藏</view>
+  <view class="iconbutton" bindtap="likeSuccess">收藏</view>
   <view class="iconbutton">分享</view>
   <view class="postThink">许愿</view>
-  <view class="postOrder">兑换</view>
+  <view class="postOrder" bindtap="openConfirmExchange">兑换</view>
 </view>

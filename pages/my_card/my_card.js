@@ -25,5 +25,10 @@ Page({
       sliderOffset: e.currentTarget.offsetLeft,
       activeIndex: e.currentTarget.id
     });
+  },
+  showQuan: function(e){
+    wx.navigateTo({
+      url: '../show_card/show_card'
+    })
   }
 });

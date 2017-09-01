@@ -12,7 +12,7 @@
       <view class="weui-tab__panel">
         <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
         <!--兑换-->
-          <view class="quan-box">
+          <view class="quan-box" bindtap="showQuan">
             <view class="quan-type">
               <image class="quan-icon" src="../../image/quan/duihuan.png"></image>
             </view>

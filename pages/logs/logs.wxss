@@ -1,8 +1,82 @@
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+page,
+.page,
+.page__bd{
+    height: 100%;
+    background: #efefef;
 }
-.log-item {
-  margin: 10rpx;
+.weui-cells{
+  margin-top: 16px;
+}
+/* 商品列表 */
+
+.gooditem {
+  background: #fff;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.gooditem_shop {
+  display: block;
+  width: 100%;
+  height: 96px;
+  background: #fff;
+}
+
+.gooditem_goodslist {
+  display: block;
+  overflow: hidden;
+  background: #fcfcfc;
+}
+
+.gooditem_logo, .gooditem_logo image {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+
+.gooditem_logo {
+  float: left;
+  margin: 8px;
+}
+
+.gooditem_info {
+  float: left;
+  margin: 8px;
+}
+
+.gooditem_lbs {
+  float: right;
+  margin: 8px;
+  width: 60px;
+}
+
+.shop_title, .shop_add {
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  display: block;
+}
+
+.goods {
+  display: block;
+  width: 100%;
+  height: 32px;
+}
+
+.goods_title {
+  height: 32px;
+  line-height: 32px;
+  text-align: left;
+  display: block;
+  float: left;
+  margin-left: 8px;
+}
+
+.goods_integral {
+  height: 32px;
+  line-height: 32px;
+  text-align: right;
+  display: block;
+  float: right;
+  margin-right: 8px;
 }

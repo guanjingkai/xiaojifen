@@ -1,0 +1,26 @@
+<!--msg_success.wxml-->
+<view class="page">
+    <view class="weui-msg">
+        <view class="weui-msg__icon-area">
+            <icon type="success" size="93"></icon>
+        </view>
+        <view class="weui-msg__text-area">
+            <view class="weui-msg__title">兑换成功</view>
+            <view class="weui-msg__desc">您以成功兑换星巴克拿铁大杯咖啡，您可在【我的卡券】，或微信【卡包会员卡中】查看并使用您的兑换券<navigator url="" class="weui-msg__link">使用帮助</navigator></view>
+        </view>
+        <view class="weui-msg__opr-area">
+            <view class="weui-btn-area">
+                <button class="weui-btn" type="primary" bindtap="goQcode">立即使用</button>
+                <button class="weui-btn" type="default" bindtap="look">随便看看</button>
+            </view>
+        </view>
+        <view class="weui-msg__extra-area">
+            <view class="weui-footer">
+                <view class="weui-footer__links">
+                    <navigator url="" class="weui-footer__link">惠积分</navigator>
+                </view>
+                <view class="weui-footer__text">Copyright © 2008-2016 huijifen.com</view>
+            </view>
+        </view>
+    </view>
+</view>
