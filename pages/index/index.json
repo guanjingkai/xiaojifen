@@ -1,1 +1,6 @@
-{}
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#FED958",
+  "navigationBarTitleText":"小云积分|定位中...",
+  "navigationBarTextStyle": "black"
+}

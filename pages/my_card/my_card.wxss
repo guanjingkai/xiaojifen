@@ -49,6 +49,7 @@ page,
   width: 50px;
   text-align: right;
   color:#fff;
+  font-size: 14px;
 }
 .shop_title, .shop_add{
   height: 32px;
@@ -57,10 +58,10 @@ page,
   display: block;
 }
 .shop_title{
-  font-size: 18px;
+  font-size: 14px;
 }
 .shop_add{
-  font-size: 14px;
+  font-size: 12px;
 }
 .goods{
   display: block;
@@ -95,8 +96,9 @@ page,
   margin: 8px auto;
 }
 .quan-type{
-  width: 56px;
+  width: 0px;
   height: 112px;
+  display: none;
 }
 .quan-icon{
   width: 56px;

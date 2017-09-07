@@ -1,0 +1,29 @@
+<!--pages/goods_list/goods_list.wxml-->
+<view class="page">
+  <view class="bigTitle" style="margin-top:16px;">
+    <view class="bigTitleV">
+      <text class="bigTitle1">{{title1}}</text>
+      <text class="bigTitle2">{{title2}}</text>
+    </view>
+    <view class="bigTitleM" bindtap='openGoodsList'>
+      
+    </view>
+  </view>
+
+  <view class="gooditem" wx:for="{{shopList}}">
+    <view class="gooditem_shop" bindtap="openShopIndex">
+      <view class="gooditem_logo">
+        <image src="../../image/demo/coffee.jpeg"></image>
+      </view>
+      <view class="gooditem_info">
+        <text class="shop_title">星巴克拿铁大杯</text>
+      </view>
+      <view class="goods">
+        <text class="goods_title">由星巴克提供</text>
+        <text class="goods_integral">100惠币</text>
+      </view>
+    </view>
+    <view class="gooditem_lbs">100m
+    </view>
+  </view>
+</view>

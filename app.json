@@ -1,45 +1,42 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
+    "pages/my/my",
     "pages/integral/integral",
+    "pages/goods_index/goods_index",
     "pages/shop_index/shop_index",
     "pages/my_card/my_card",
     "pages/msg_success/msg_success",
-    "pages/show_card/show_card"
+    "pages/show_card/show_card",
+    "pages/goods_list/goods_list",
+    "pages/shop_map/shop_map"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "小积分",
+    "navigationBarTitleText": "小云积分",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#707070",
-    "selectedColor": "#09BB07",
+    "selectedColor": "#FE8800",
     "borderStyle": "white",
-    "backgroundColor": "#ffffff",
+    "backgroundColor": "#efefef",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "礼物兑换",
-        "iconPath": "image/tabbar/liwu.png",
-        "selectedIconPath": "image/tabbar/liwu_s.png"
-      },
-      {
-        "pagePath": "pages/index/index",
-        "text": "许愿池",
-        "iconPath": "image/tabbar/liwu.png",
-        "selectedIconPath": "image/tabbar/liwu_s.png"
+        "text": "首页",
+        "iconPath": "image/tabbar/index.png",
+        "selectedIconPath": "image/tabbar/index_s.png"
       },
       {
         "pagePath": "pages/my_card/my_card",
         "text": "我的卡券",
-        "iconPath": "image/tabbar/jifen.png",
-        "selectedIconPath": "image/tabbar/jifen_s.png"
+        "iconPath": "image/tabbar/quan.png",
+        "selectedIconPath": "image/tabbar/quan_s.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/my/my",
         "text": "个人中心",
         "iconPath": "image/tabbar/wo.png",
         "selectedIconPath": "image/tabbar/wo_s.png"

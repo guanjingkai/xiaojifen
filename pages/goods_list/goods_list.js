@@ -1,18 +1,41 @@
-// pages/shop_index/shop_index.js
+// pages/goods_list/goods_list.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    shopList: [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    title1:'',
+    title2:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var id = options.id;
+    if(id == 1){ 
+      this.setData({
+        title1:"小编推荐",
+        title2:"小编为您精心挑选的优质商品"
+      })
+    } else if (id == 2) {
+      this.setData({
+        title1: "大家都在换",
+        title2: "网罗附近兑换的人们商品"
+      })
+    } else if (id == 3) {
+      this.setData({
+        title1: "专属定制",
+        title2: "最懂你的大数据分析"
+      })
+    } else if (id == 4) {
+      this.setData({
+        title1: "我的收藏",
+        title2: "快导入积分兑换商品吧"
+      })
+    }
   },
 
   /**

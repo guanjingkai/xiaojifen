@@ -1,0 +1,2 @@
+<!--pages/index_index/index_index.wxml-->
+<text>{{page}}.wxml</text>

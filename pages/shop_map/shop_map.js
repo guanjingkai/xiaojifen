@@ -1,11 +1,41 @@
-// pages/shop_index/shop_index.js
+// pages/shop_map/shop_map.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    markers: [{
+      iconPath: "/image/icon/weizhi.png",
+      id: 0,
+      latitude: 23.099994,
+      longitude: 113.324520,
+      width: 50,
+      height: 50
+    }],
+    polyline: [{
+      points: [{
+        longitude: 113.3245211,
+        latitude: 23.10229
+      }, {
+        longitude: 113.324520,
+        latitude: 23.21229
+      }],
+      color: "#FF0000DD",
+      width: 2,
+      dottedLine: true
+    }],
+    controls: [{
+      id: 1,
+      iconPath: '/image/demo/xingbake.jpeg',
+      position: {
+        left: 0,
+        top: 300 - 50,
+        width: 50,
+        height: 50
+      },
+      clickable: true
+    }]
   },
 
   /**

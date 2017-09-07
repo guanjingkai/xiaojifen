@@ -1,4 +1,4 @@
-// pages/shop_index/shop_index.js
+// pages/index_index/index_index.js
 Page({
 
   /**

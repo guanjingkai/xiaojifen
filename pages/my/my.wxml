@@ -1,0 +1,53 @@
+<!--logs.wxml-->
+<view class="page">
+  <view class="gooditem">
+    <view class="gooditem_shop" bindtap="openShopIndex">
+      <view class="gooditem_logo">
+        <image src="../../image/demo/coffee.jpeg"></image>
+      </view>
+      <view class="gooditem_info">
+        <text class="shop_title">雷丘</text>
+        <text class="shop_add">惠币:119</text>
+      </view>
+      <view class="gooditem_lbs">
+        <text class="shop_title"></text>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__hd">
+        <image src="./image/daoru.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </view>
+      <view class="weui-cell__bd">积分导入记录</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">已兑换119惠币</view>
+    </navigator>
+    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__hd">
+        <image src="./image/list.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </view>
+      <view class="weui-cell__bd">惠币消耗记录</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">已消耗98惠币</view>
+    </navigator>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title">
+    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" data-lanmu="4" bindtap='openGoodsList'>
+      <view class="weui-cell__hd">
+        <image src="./image/like.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </view>
+      <view class="weui-cell__bd">我的收藏</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">99</view>
+    </navigator>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title">
+    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__hd">
+        <image src="./image/about.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </view>
+      <view class="weui-cell__bd">关于我们</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+  </view>
+</view>
