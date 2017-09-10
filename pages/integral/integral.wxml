@@ -1,81 +1,123 @@
-
-<view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
-  <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">
-      <view>实时搜索文本</view>
-    </view>
-  </navigator>
-  <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">
-      <view>实时搜索文本</view>
-    </view>
-  </navigator>
-  <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">
-      <view>实时搜索文本</view>
-    </view>
-  </navigator>
-  <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">
-      <view>实时搜索文本</view>
-    </view>
-  </navigator>
-</view>
 <view class="bigTitle" style="margin-top:16px;">
   <view class="bigTitleV">
-    <text class="bigTitle1">已导入过的</text>
-    <text class="bigTitle2">再次导入你的积分吧</text>
+    <text class="bigTitle1">积分导入</text>
+    <text class="bigTitle2">导入第三方软件积分兑换惠币</text>
   </view>
   <view class="bigTitleM">
+    教程?
   </view>
 </view>
 <view class="page">
-    <view class="gooditem" wx:for="{{shopListo}}">
-      <view class="gooditem_shop" bindtap="openShopIndex">
-        <view class="gooditem_logo">
+    <view class="vipitem">
+      <view class="vipitem_shop" bindtap="openShopIndex">
+        <view class="vipitem_logo">
           <image src="../../image/demo/ele.jpeg"></image>
         </view>
-        <view class="gooditem_info">
-          <text class="shop_title">饿了么</text>
-          <text class="shop_add">www.eleme.com</text>
+        <view class="vipitem_info">
+          <text class="vip_title">饿了么</text>
+          <text class="vip_add">www.eleme.com</text>
         </view>
-        <view class="gooditem_lbs">
-          <text class="shop_add">100积分=1惠币</text>
+        <view class="vipitem_lbs">100积分=1惠币
         </view>
       </view>
-      <view class="gooditem_goodslist">
+      <view class="vipitem_goodslist">
         <view class="goods" wx:for="{{goodsList}}">
           <text class="goods_title">以导入1000积分兑换100惠币</text>
           <text class="goods_integral"></text>
         </view>
       </view>
     </view>
-</view>
-<view class="bigTitle" style="margin-top:16px;">
-  <view class="bigTitleV">
-    <text class="bigTitle1">可导入的会员积分</text>
-    <text class="bigTitle2">快点关联账户导入积分吧</text>
-  </view>
-  <view class="bigTitleM">
-  </view>
-</view>
-<view class="page">
-    <view class="gooditem" wx:for="{{shopList}}">
-      <view class="gooditem_shop" bindtap="openShopIndex">
-        <view class="gooditem_logo">
-          <image src="../../image/demo/ele.jpeg"></image>
+    <view class="vipitem">
+      <view class="vipitem_shop" bindtap="openShopIndex" style='background: #FFE7BA;'>
+        <view class="vipitem_logo">
+          <image src="../../image/demo/didi.jpeg"></image>
         </view>
-        <view class="gooditem_info">
-          <text class="shop_title">饿了么</text>
-          <text class="shop_add">www.eleme.com</text>
+        <view class="vipitem_info">
+          <text class="vip_title">滴滴打车</text>
+          <text class="vip_add">www.小桔科技.com</text>
         </view>
-        <view class="gooditem_lbs">
-          <text class="shop_add">100积分=1惠币</text>
+        <view class="vipitem_lbs">50积分=1惠币
         </view>
       </view>
-      <view class="gooditem_goodslist">
+      <view class="vipitem_goodslist">
         <view class="goods" wx:for="{{goodsList}}">
-          <text class="goods_title">已有7109人兑换了141918惠币</text>
+          <text class="goods_title">以导入1000积分兑换100惠币</text>
+          <text class="goods_integral"></text>
+        </view>
+      </view>
+    </view>
+    <view class="vipitem">
+      <view class="vipitem_shop" bindtap="openShopIndex" style='background: #BAD9FF;'>
+        <view class="vipitem_logo">
+          <image src="../../image/demo/woerma.png"></image>
+        </view>
+        <view class="vipitem_info">
+          <text class="vip_title">沃尔玛</text>
+          <text class="vip_add">www.eleme.com</text>
+        </view>
+        <view class="vipitem_lbs">100积分=1惠币
+        </view>
+      </view>
+      <view class="vipitem_goodslist">
+        <view class="goods" wx:for="{{goodsList}}">
+          <text class="goods_title">以导入1000积分兑换100惠币</text>
+          <text class="goods_integral"></text>
+        </view>
+      </view>
+    </view>
+    <view class="vipitem">
+      <view class="vipitem_shop" bindtap="openShopIndex" style='background: #FFBABA;'>
+        <view class="vipitem_logo">
+          <image src="../../image/demo/wanda.png"></image>
+        </view>
+        <view class="vipitem_info">
+          <text class="vip_title">万达广场</text>
+          <text class="vip_add">www.wanda.com</text>
+        </view>
+        <view class="vipitem_lbs">30积分=1惠币
+        </view>
+      </view>
+      <view class="vipitem_goodslist">
+        <view class="goods" wx:for="{{goodsList}}">
+          <text class="goods_title">以导入1000积分兑换100惠币</text>
+          <text class="goods_integral"></text>
+        </view>
+      </view>
+    </view>
+    <view class="vipitem">
+      <view class="vipitem_shop" bindtap="openShopIndex" style='background: #C0F7B4;'>
+        <view class="vipitem_logo">
+          <image src="../../image/demo/meituan.png"></image>
+        </view>
+        <view class="vipitem_info">
+          <text class="vip_title">美团</text>
+          <text class="vip_add">www.meituan.com</text>
+        </view>
+        <view class="vipitem_lbs">120积分=1惠币
+        </view>
+      </view>
+      <view class="vipitem_goodslist">
+        <view class="goods" wx:for="{{goodsList}}">
+          <text class="goods_title">以导入1000积分兑换100惠币</text>
+          <text class="goods_integral"></text>
+        </view>
+      </view>
+    </view>
+    <view class="vipitem">
+      <view class="vipitem_shop" bindtap="openShopIndex" style='background: #F7F6B4;'>
+        <view class="vipitem_logo">
+          <image src="../../image/demo/hainanhangkong.jpg"></image>
+        </view>
+        <view class="vipitem_info">
+          <text class="vip_title">海南航空</text>
+          <text class="vip_add">www.hnair.com</text>
+        </view>
+        <view class="vipitem_lbs">300积分=1惠币
+        </view>
+      </view>
+      <view class="vipitem_goodslist">
+        <view class="goods" wx:for="{{goodsList}}">
+          <text class="goods_title">以导入1000积分兑换100惠币</text>
           <text class="goods_integral"></text>
         </view>
       </view>

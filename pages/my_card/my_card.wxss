@@ -12,38 +12,38 @@ page,
     text-align: center;
     background: #efefef;
 }
-.gooditem{
+.quanitem{
   display: block;
   width: 100%;
   border-radius: 8px;
   overflow:hidden;
 }
-.gooditem_shop{
+.quanitem_shop{
   display:block;
   width: 100%;
   height: 80px;
   background: #74CEFD;
 }
-.gooditem_goodslist{
+.quanitem_goodslist{
   display: block;
   overflow: hidden;
   background: #fff;
 }
-.gooditem_logo ,.gooditem_logo image{
+.quanitem_logo ,.quanitem_logo image{
   width: 64px;
   height: 64px;
   border-radius: 40px;
 }
-.gooditem_logo{
+.quanitem_logo{
   float: left;
   margin: 8px;
 }
-.gooditem_info{
+.quanitem_info{
   float: left;
   margin: 8px;
   color:#ffffff;
 }
-.gooditem_lbs{
+.quanitem_lbs{
   float: right;
   margin: 8px;
   width: 50px;

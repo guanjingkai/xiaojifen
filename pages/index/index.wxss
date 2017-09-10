@@ -85,13 +85,6 @@
 .searchbar-result:before {
   display: none;
 }
-
-.weui-cell {
-  padding: 24rpx 30rpx 24rpx 70rpx;
-}
-.weui-tab__panel {
-    background: #efefef;
-}
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -120,90 +113,6 @@ page, .page, .page__bd {
 
 .page__bd {
   padding-bottom: 0;
-}
-
-.weui-tab__content {
-  text-align: center;
-}
-
-/* 商品列表 */
-
-.gooditem {
-  background: #fff;
-  display: block;
-  width: 46%;
-  margin: 16rpx 2%;
-  overflow: hidden;
-  float: left;
-  position: relative;
-}
-
-.gooditem_shop {
-  display: block;
-  width: 100%;
-  height: 192rpx;
-  background: #fff;
-}
-
-.gooditem_goodslist {
-  display: block;
-  overflow: hidden;
-  background: #fcfcfc;
-}
-
-.gooditem_logo, .gooditem_logo image {
-  width: 100%;
-  height: 320rpx;
-}
-.gooditem_logo image {
-  width: 100%;
-  height: 320rpx;
-}
-
-.gooditem_info {
-  float: left;
-  height: 64rpx;
-  line-height: 64rpx;
-  margin-left: 16rpx;
-}
-
-.gooditem_lbs {
-  position: absolute;
-  top: 0px;
-  right:0px;
-  width: 120rpx;
-  line-height: 40rpx;
-  height: 40rpx;
-  background: #88d987;
-  color: #fff;
-  text-align: center;
-}
-.goods {
-  display: flex;
-  width: 100%;
-  height: 48rpx;
-  float: left;
-  font-size: 28rpx;
-  color: #777;
-}
-
-
-.goods_integral {
-  height: 48rpx;
-  line-height: 48rpx;
-  width: 200rpx;
-  text-align: right;
-  display: block;
-  margin-right: 16rpx;
-  color: #FE8800;
-}
-.goods_title {
-  height: 48rpx;
-  line-height: 48rpx;
-  width: 100%;
-  text-align: left;
-  margin-left: 16rpx;
-  display: block;
 }
 
 /*快捷入口  */

@@ -39,15 +39,14 @@ Page({
       }
     });
   },
-  tabClick: function (e) {
-    this.setData({
-      sliderOffset: e.currentTarget.offsetLeft,
-      activeIndex: e.currentTarget.id
-    });
-  },
   openShopIndex: function (e) {
     wx.navigateTo({
       url: "../goods_index/goods_index"
+    })
+  },
+  openLbsList: function (e) {
+    wx.navigateTo({
+      url: "../lbs_list/lbs_list"
     })
   },
   openIntegral: function (e) {

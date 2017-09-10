@@ -9,6 +9,7 @@
     "pages/msg_success/msg_success",
     "pages/show_card/show_card",
     "pages/goods_list/goods_list",
+    "pages/lbs_list/lbs_list",
     "pages/shop_map/shop_map"
   ],
   "window": {

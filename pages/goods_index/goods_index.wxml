@@ -28,6 +28,37 @@
 
   </view>
   <view class="weui-panel weui-panel_access">
+    <view class="weui-panel__hd">使用信息</view>
+    <view class="weui-panel__bd">
+      <view class='quan-info'>
+        <text class='quan-info-title'>当前库存</text>
+        <text class='quan-info-value'>9918</text>
+      </view>
+      <view class='quan-info'>
+        <text class='quan-info-title'>兑换限制</text>
+        <text class='quan-info-value'>每个用户限兑换1张</text>
+      </view>
+      <view class='quan-info'>
+        <text class='quan-info-title'>有效期</text>
+        <text class='quan-info-value'>2017.09.06-2017.10.20</text>
+      </view>
+      <view class='quan-info'>
+        <text class='quan-info-title'>可用时段</text>
+        <text class='quan-info-value'>周一至周日 全天</text>
+      </view>
+    </view>
+
+  </view>
+  <view class="weui-panel weui-panel_access">
+    <view class="weui-panel__hd">试用门店</view>
+    <view class="weui-panel__bd">
+     <view class='quan-info'>
+        <text class='quan-info-title'>全店通用</text>
+      </view>
+    </view>
+
+  </view>
+  <view class="weui-panel weui-panel_access">
     <view class="weui-panel__hd">兑换流程</view>
     <view class="weui-panel__bd">
       <image class="goodInfoM" src="../../image/demo/liucheng.png" mode="widthFix"></image>

@@ -16,20 +16,20 @@
             <view class="quan-type">
               <image class="quan-icon" src="../../image/quan/duihuan.png"></image>
             </view>
-            <view class="gooditem">
-              <view class="gooditem_shop" bindtap="openShopIndex"  style="background:#83DD82;">
-                <view class="gooditem_logo">
+            <view class="quanitem">
+              <view class="quanitem_shop" bindtap="openShopIndex"  style="background:#83DD82;">
+                <view class="quanitem_logo">
                   <image src="../../image/demo/coffee.jpeg"></image>
                 </view>
-                <view class="gooditem_info">
+                <view class="quanitem_info">
                   <text class="shop_title">拿铁开发大杯兑换券</text>
                   <text class="shop_add">北京朝阳维亚大厦1楼</text>
                 </view>
-                <view class="gooditem_lbs">
+                <view class="quanitem_lbs">
                   星巴克
                 </view>
               </view>
-              <view class="gooditem_goodslist">
+              <view class="quanitem_goodslist">
                 <view class="goods" wx:for="{{goodsList}}">
                   <text class="goods_title">有效期2017.06.01 - 2017.12.31</text>
                   <text class="goods_integral"></text>
@@ -42,20 +42,20 @@
             <view class="quan-type">
               <image class="quan-icon" src="../../image/quan/manjian.png"></image>
             </view>
-            <view class="gooditem" >
-              <view class="gooditem_shop" bindtap="openShopIndex" style="background:#FF9897;">
-                <view class="gooditem_logo">
+            <view class="quanitem" >
+              <view class="quanitem_shop" bindtap="openShopIndex" style="background:#FF9897;">
+                <view class="quanitem_logo">
                   <image src="../../image/demo/coffee.jpeg"></image>
                 </view>
-                <view class="gooditem_info">
+                <view class="quanitem_info">
                   <text class="shop_title">满100减20优惠券</text>
                   <text class="shop_add">北京朝阳维亚大厦1楼</text>
                 </view>
-                <view class="gooditem_lbs">
+                <view class="quanitem_lbs">
                   星巴克
                 </view>
               </view>
-              <view class="gooditem_goodslist">
+              <view class="quanitem_goodslist">
                 <view class="goods" wx:for="{{goodsList}}">
                   <text class="goods_title">有效期2017.06.01 - 2017.12.31</text>
                   <text class="goods_integral"></text>
@@ -68,20 +68,20 @@
             <view class="quan-type">
               <image class="quan-icon" src="../../image/quan/zhekou.png"></image>
             </view>
-            <view class="gooditem" >
-              <view class="gooditem_shop" bindtap="openShopIndex">
-                <view class="gooditem_logo">
+            <view class="quanitem" >
+              <view class="quanitem_shop" bindtap="openShopIndex">
+                <view class="quanitem_logo">
                   <image src="../../image/demo/coffee.jpeg"></image>
                 </view>
-                <view class="gooditem_info">
+                <view class="quanitem_info">
                   <text class="shop_title">全场8折券</text>
                   <text class="shop_add">北京朝阳维亚大厦1楼</text>
                 </view>
-                <view class="gooditem_lbs">
+                <view class="quanitem_lbs">
                   星巴克
                 </view>
               </view>
-              <view class="gooditem_goodslist">
+              <view class="quanitem_goodslist">
                 <view class="goods" wx:for="{{goodsList}}">
                   <text class="goods_title">有效期2017.06.01 - 2017.12.31</text>
                   <text class="goods_integral">即将过期</text>
@@ -94,20 +94,20 @@
             <view class="quan-type">
               <image class="quan-icon" src="../../image/quan/daijin.png"></image>
             </view>
-            <view class="gooditem" >
-              <view class="gooditem_shop" bindtap="openShopIndex" style="background:#FFDD79;">
-                <view class="gooditem_logo">
+            <view class="quanitem" >
+              <view class="quanitem_shop" bindtap="openShopIndex" style="background:#FFDD79;">
+                <view class="quanitem_logo">
                   <image src="../../image/demo/coffee.jpeg"></image>
                 </view>
-                <view class="gooditem_info">
+                <view class="quanitem_info">
                   <text class="shop_title">20元代金券</text>
                   <text class="shop_add">北京朝阳维亚大厦1楼</text>
                 </view>
-                <view class="gooditem_lbs">
+                <view class="quanitem_lbs">
                   星巴克
                 </view>
               </view>
-              <view class="gooditem_goodslist">
+              <view class="quanitem_goodslist">
                 <view class="goods" wx:for="{{goodsList}}">
                   <text class="goods_title">有效期2017.06.01 - 2017.12.31</text>
                   <text class="goods_integral"></text>
@@ -119,20 +119,20 @@
             <view class="quan-type">
               <image class="quan-icon" src="../../image/quan/zhekou.png"></image>
             </view>
-            <view class="gooditem" >
-              <view class="gooditem_shop" bindtap="openShopIndex">
-                <view class="gooditem_logo">
+            <view class="quanitem" >
+              <view class="quanitem_shop" bindtap="openShopIndex">
+                <view class="quanitem_logo">
                   <image src="../../image/demo/coffee.jpeg"></image>
                 </view>
-                <view class="gooditem_info">
+                <view class="quanitem_info">
                   <text class="shop_title">拿铁开发大杯</text>
                   <text class="shop_add">北京朝阳维亚大厦1楼</text>
                 </view>
-                <view class="gooditem_lbs">
+                <view class="quanitem_lbs">
                   星巴克
                 </view>
               </view>
-              <view class="gooditem_goodslist">
+              <view class="quanitem_goodslist">
                 <view class="goods" wx:for="{{goodsList}}">
                   <text class="goods_title">有效期2017.06.01 - 2017.12.31</text>
                   <text class="goods_integral"></text>
@@ -149,20 +149,20 @@
             <view class="quan-type">
               <image class="quan-icon" src="../../image/quan/duihuan.png"></image>
             </view>
-            <view class="gooditem">
-              <view class="gooditem_shop" bindtap="openShopIndex"  style="background:#83DD82;">
-                <view class="gooditem_logo">
+            <view class="quanitem">
+              <view class="quanitem_shop" bindtap="openShopIndex"  style="background:#83DD82;">
+                <view class="quanitem_logo">
                   <image src="../../image/demo/coffee.jpeg"></image>
                 </view>
-                <view class="gooditem_info">
+                <view class="quanitem_info">
                   <text class="shop_title">拿铁开发大杯兑换券</text>
                   <text class="shop_add">北京朝阳维亚大厦1楼</text>
                 </view>
-                <view class="gooditem_lbs">
+                <view class="quanitem_lbs">
                   星巴克
                 </view>
               </view>
-              <view class="gooditem_goodslist">
+              <view class="quanitem_goodslist">
                 <view class="goods" wx:for="{{goodsList}}">
                   <text class="goods_title">使用时间 2017.06.01 18：00</text>
                   <text class="goods_integral"></text>
@@ -175,20 +175,20 @@
             <view class="quan-type">
               <image class="quan-icon" src="../../image/quan/manjian.png"></image>
             </view>
-            <view class="gooditem" >
-              <view class="gooditem_shop" bindtap="openShopIndex" style="background:#FF9897;">
-                <view class="gooditem_logo">
+            <view class="quanitem" >
+              <view class="quanitem_shop" bindtap="openShopIndex" style="background:#FF9897;">
+                <view class="quanitem_logo">
                   <image src="../../image/demo/coffee.jpeg"></image>
                 </view>
-                <view class="gooditem_info">
+                <view class="quanitem_info">
                   <text class="shop_title">满100减20优惠券</text>
                   <text class="shop_add">北京朝阳维亚大厦1楼</text>
                 </view>
-                <view class="gooditem_lbs">
+                <view class="quanitem_lbs">
                   星巴克
                 </view>
               </view>
-              <view class="gooditem_goodslist">
+              <view class="quanitem_goodslist">
                 <view class="goods" wx:for="{{goodsList}}">
                   <text class="goods_title">使用时间 2017.06.01 18：00</text>
                   <text class="goods_integral"></text>
@@ -201,20 +201,20 @@
             <view class="quan-type">
               <image class="quan-icon" src="../../image/quan/zhekou.png"></image>
             </view>
-            <view class="gooditem" >
-              <view class="gooditem_shop" bindtap="openShopIndex">
-                <view class="gooditem_logo">
+            <view class="quanitem" >
+              <view class="quanitem_shop" bindtap="openShopIndex">
+                <view class="quanitem_logo">
                   <image src="../../image/demo/coffee.jpeg"></image>
                 </view>
-                <view class="gooditem_info">
+                <view class="quanitem_info">
                   <text class="shop_title">全场8折券</text>
                   <text class="shop_add">北京朝阳维亚大厦1楼</text>
                 </view>
-                <view class="gooditem_lbs">
+                <view class="quanitem_lbs">
                   星巴克
                 </view>
               </view>
-              <view class="gooditem_goodslist">
+              <view class="quanitem_goodslist">
                 <view class="goods" wx:for="{{goodsList}}">
                   <text class="goods_title">使用时间 2017.06.01 18：01</text>
                   <text class="goods_integral"></text>
@@ -227,20 +227,20 @@
             <view class="quan-type">
               <image class="quan-icon" src="../../image/quan/daijin.png"></image>
             </view>
-            <view class="gooditem" >
-              <view class="gooditem_shop" bindtap="openShopIndex" style="background:#FFDD79;">
-                <view class="gooditem_logo">
+            <view class="quanitem" >
+              <view class="quanitem_shop" bindtap="openShopIndex" style="background:#FFDD79;">
+                <view class="quanitem_logo">
                   <image src="../../image/demo/coffee.jpeg"></image>
                 </view>
-                <view class="gooditem_info">
+                <view class="quanitem_info">
                   <text class="shop_title">20元代金券</text>
                   <text class="shop_add">北京朝阳维亚大厦1楼</text>
                 </view>
-                <view class="gooditem_lbs">
+                <view class="quanitem_lbs">
                   星巴克
                 </view>
               </view>
-              <view class="gooditem_goodslist">
+              <view class="quanitem_goodslist">
                 <view class="goods" wx:for="{{goodsList}}">
                   <text class="goods_title">使用时间 2017.06.01 18：00</text>
                   <text class="goods_integral"></text>
@@ -255,20 +255,20 @@
             <view class="quan-type">
               <image class="quan-icon" src="../../image/quan/duihuan.png"></image>
             </view>
-            <view class="gooditem">
-              <view class="gooditem_shop" bindtap="openShopIndex"  style="background:#83DD82;">
-                <view class="gooditem_logo">
+            <view class="quanitem">
+              <view class="quanitem_shop" bindtap="openShopIndex"  style="background:#83DD82;">
+                <view class="quanitem_logo">
                   <image src="../../image/demo/coffee.jpeg"></image>
                 </view>
-                <view class="gooditem_info">
+                <view class="quanitem_info">
                   <text class="shop_title">拿铁开发大杯兑换券</text>
                   <text class="shop_add">北京朝阳维亚大厦1楼</text>
                 </view>
-                <view class="gooditem_lbs">
+                <view class="quanitem_lbs">
                   星巴克
                 </view>
               </view>
-              <view class="gooditem_goodslist">
+              <view class="quanitem_goodslist">
                 <view class="goods" wx:for="{{goodsList}}">
                   <text class="goods_title">有效期2017.06.01 - 2017.12.31</text>
                   <text class="goods_integral">已过期</text>
@@ -281,20 +281,20 @@
             <view class="quan-type">
               <image class="quan-icon" src="../../image/quan/manjian.png"></image>
             </view>
-            <view class="gooditem" >
-              <view class="gooditem_shop" bindtap="openShopIndex" style="background:#FF9897;">
-                <view class="gooditem_logo">
+            <view class="quanitem" >
+              <view class="quanitem_shop" bindtap="openShopIndex" style="background:#FF9897;">
+                <view class="quanitem_logo">
                   <image src="../../image/demo/coffee.jpeg"></image>
                 </view>
-                <view class="gooditem_info">
+                <view class="quanitem_info">
                   <text class="shop_title">满100减20优惠券</text>
                   <text class="shop_add">北京朝阳维亚大厦1楼</text>
                 </view>
-                <view class="gooditem_lbs">
+                <view class="quanitem_lbs">
                   星巴克
                 </view>
               </view>
-              <view class="gooditem_goodslist">
+              <view class="quanitem_goodslist">
                 <view class="goods" wx:for="{{goodsList}}">
                   <text class="goods_title">有效期2017.06.01 - 2017.12.31</text>
                   <text class="goods_integral">已过期</text>
@@ -307,20 +307,20 @@
             <view class="quan-type">
               <image class="quan-icon" src="../../image/quan/zhekou.png"></image>
             </view>
-            <view class="gooditem" >
-              <view class="gooditem_shop" bindtap="openShopIndex">
-                <view class="gooditem_logo">
+            <view class="quanitem" >
+              <view class="quanitem_shop" bindtap="openShopIndex">
+                <view class="quanitem_logo">
                   <image src="../../image/demo/coffee.jpeg"></image>
                 </view>
-                <view class="gooditem_info">
+                <view class="quanitem_info">
                   <text class="shop_title">全场8折券</text>
                   <text class="shop_add">北京朝阳维亚大厦1楼</text>
                 </view>
-                <view class="gooditem_lbs">
+                <view class="quanitem_lbs">
                   星巴克
                 </view>
               </view>
-              <view class="gooditem_goodslist">
+              <view class="quanitem_goodslist">
                 <view class="goods" wx:for="{{goodsList}}">
                   <text class="goods_title">有效期2017.06.01 - 2017.12.31</text>
                   <text class="goods_integral">已过期</text>
@@ -333,20 +333,20 @@
             <view class="quan-type">
               <image class="quan-icon" src="../../image/quan/daijin.png"></image>
             </view>
-            <view class="gooditem" >
-              <view class="gooditem_shop" bindtap="openShopIndex" style="background:#FFDD79;">
-                <view class="gooditem_logo">
+            <view class="quanitem" >
+              <view class="quanitem_shop" bindtap="openShopIndex" style="background:#FFDD79;">
+                <view class="quanitem_logo">
                   <image src="../../image/demo/coffee.jpeg"></image>
                 </view>
-                <view class="gooditem_info">
+                <view class="quanitem_info">
                   <text class="shop_title">20元代金券</text>
                   <text class="shop_add">北京朝阳维亚大厦1楼</text>
                 </view>
-                <view class="gooditem_lbs">
+                <view class="quanitem_lbs">
                   星巴克
                 </view>
               </view>
-              <view class="gooditem_goodslist">
+              <view class="quanitem_goodslist">
                 <view class="goods" wx:for="{{goodsList}}">
                   <text class="goods_title">有效期2017.06.01 - 2017.12.31</text>
                   <text class="goods_integral">已过期</text>

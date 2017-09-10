@@ -1,15 +1,15 @@
 <!--logs.wxml-->
 <view class="page">
-  <view class="gooditem">
-    <view class="gooditem_shop" bindtap="openShopIndex">
-      <view class="gooditem_logo">
+  <view class="myinfo">
+    <view class="myinfo_shop" bindtap="openShopIndex">
+      <view class="myinfo_logo">
         <image src="../../image/demo/coffee.jpeg"></image>
       </view>
-      <view class="gooditem_info">
+      <view class="myinfo_info">
         <text class="shop_title">雷丘</text>
         <text class="shop_add">惠币:119</text>
       </view>
-      <view class="gooditem_lbs">
+      <view class="myinfo_lbs">
         <text class="shop_title"></text>
       </view>
     </view>
