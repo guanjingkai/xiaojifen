@@ -77,7 +77,7 @@ Page({
   },
   openMap: function (e) {
     wx.navigateTo({
-      url: "../shop_map/shop_map"
+      url: "../map_route/map_route"
     })
   }
 });

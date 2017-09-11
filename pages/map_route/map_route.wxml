@@ -1,0 +1,56 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+          <view class="map_box">
+            <map id="navi_map" longitude="{{zLongitude}}" latitude="{{zLatitude}}" scale="{{scale}}" markers="{{markers}}" polyline="{{polyline}}"></map>
+          </view>
+
+          <view class="text_box">
+            <view class="text">{{distance}}</view>
+            <view class="text">{{distance}} {{cost}}</view>
+            <view class="detail_button"  data-type="0" bindtap='seeInfo'>详情</view>
+          </view>
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+          <view class="map_box">
+            <map id="navi_map" longitude="{{zLongitude}}" latitude="{{zLatitude}}" scale="{{scale}}" markers="{{markers}}" polyline="{{polyline}}"></map>
+          </view>
+
+          <view class="text_box">
+            <view class="text">{{distance}}</view>
+            <view class="text">{{distance}} {{cost}}</view>
+            <view class="detail_button"  data-type="1" bindtap='seeInfo'>详情</view>
+          </view>
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+          <view class="map_box">
+            <map id="navi_map" longitude="{{zLongitude}}" latitude="{{zLatitude}}" scale="{{scale}}" markers="{{markers}}" polyline="{{polyline}}"></map>
+          </view>
+
+          <view class="text_box">
+            <view class="text">{{distance}}</view>
+            <view class="text">{{distance}} {{cost}}</view>
+            <view class="detail_button"  data-type="2" bindtap='seeInfo'>详情</view>
+          </view>
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 3}}">
+          <view class=".text_box_bus" wx:for="{{transits}}" wx:for-item="i">
+            <text class="text_item" wx:for="{{i.transport}}" wx:for-item="j">
+              {{j}}
+            </text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

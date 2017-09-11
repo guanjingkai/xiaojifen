@@ -1,4 +1,5 @@
 //app.js
+var common = require('./utils/common.js');
 App({
   onLaunch: function () {
     //调用API从本地缓存中获取数据
@@ -70,36 +71,6 @@ App({
     wx.setNavigationBarTitle({
       title: '小云积分|定位中...'
     })
-    wx.getLocation({
-      type: 'wgs84',
-      success: function (res) {
-        var bmap = require('./utils/bmap-wx.min.js')
-        var BMap = new bmap.BMapWX({
-          ak: 'a1ydgGv9i906zihIlzMNWkw441hMZgZH'
-        })
-        BMap.regeocoding({
-          fail: function (data) {
-            console.log(data)
-          },
-          success: function (data) {
-            //删掉省市区
-            var location = data.wxMarkerData[0].address.slice(data.originalData.result.addressComponent.city.length + data.originalData.result.addressComponent.district.length);
-            wx.setStorage({
-              key: "location",
-              data: location
-            })
-            wx.setNavigationBarTitle({
-              title: '小云积分|' + location
-            })
-          }
-        });
-
-        var latitude = res.latitude
-        var longitude = res.longitude
-        var speed = res.speed
-        var accuracy = res.accuracy
-        console.log(res);
-      }
-    })
+    common.getLocation();
   }
 })

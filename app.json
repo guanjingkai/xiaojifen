@@ -10,7 +10,9 @@
     "pages/show_card/show_card",
     "pages/goods_list/goods_list",
     "pages/lbs_list/lbs_list",
-    "pages/shop_map/shop_map"
+    "pages/shop_map/shop_map",
+    "pages/map_route/map_route",
+    "pages/map_route_info/map_route_info"
   ],
   "window": {
     "backgroundTextStyle": "light",

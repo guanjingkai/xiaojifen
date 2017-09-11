@@ -62,5 +62,15 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+  openMap: function (e) {
+    wx.navigateTo({
+      url: "../map_route/map_route"
+    })
+  },
+  openGoodIndex: function (e) {
+    wx.navigateTo({
+      url: "../goods_index/goods_index"
+    })
+  },
 })
