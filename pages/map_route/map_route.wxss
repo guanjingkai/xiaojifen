@@ -31,6 +31,7 @@ page,
 }
 .text_box .text{
   margin: 15px;
+  text-align: left;
 }
 .detail_button{
   position:absolute;

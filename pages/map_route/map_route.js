@@ -12,6 +12,7 @@ Page({
     activeIndex: 0,
     sliderOffset: 0,
     sliderLeft: 0,
+    locationName:'',
     zLatitude: '',
     zLongitude: '',
     myLatitude: '',
@@ -26,15 +27,15 @@ Page({
     }, {
       iconPath: "../../image/icon/mapicon_navi_e.png",
       id: 0,
-      latitude: 39.90816,
-      longitude: 116.434446,
+      latitude: 39.940192,
+      longitude: 116.461343,
       width: 24,
       height: 34
     }],
     distance: '',
     cost: '',
     polyline: [],
-    scale:15
+    scale:13
   },
 
   /**
@@ -44,10 +45,17 @@ Page({
     var _self = this;
     var latitude;
     var longitude;
-    var zlatitude = (_self.data.latitude + _self.data.markers[1].latitude) / 2;
-    var zlongitude = (_self.data.longitude + _self.data.markers[1].longitude) / 2;
-    console.log(zlatitude)
-    console.log(zlongitude)
+    var zlatitude;
+    var zlongitude;
+    wx.getStorage({
+      key: 'location',
+      success: function (res) {
+        _self.setData({
+          locationName: res.data
+        })
+
+      }
+    })
     wx.getStorage({
       key: 'latitude',
       success: function (res) {
@@ -56,17 +64,23 @@ Page({
           key: 'longitude',
           success: function (res) {
             longitude = res.data;
-            console.log(latitude);
-            console.log(longitude);
             _self.setData({
               'markers[0].latitude': latitude,
               'markers[0].longitude': longitude,
               myLatitude: latitude,
-              myLongitude: longitude,
+              myLongitude: longitude
+            });
+            zlatitude = (_self.data.myLatitude + _self.data.markers[1].latitude) / 2;
+            zlongitude = (_self.data.myLongitude + _self.data.markers[1].longitude) / 2;
+            console.log(_self.data.myLatitude);
+            console.log(_self.data.markers[1].latitude);
+            console.log(zlatitude);
+            console.log(zlongitude);
+            
+            _self.setData({
               zLatitude: zlatitude,
               zLongitude: zlongitude
             });
-            //计算中心坐标
             _self.setWalk();
           }
         })
@@ -146,7 +160,7 @@ Page({
     var myAmapFun = new amapFile.AMapWX({ key: key });
     myAmapFun.getWalkingRoute({
       origin: _self.data.myLongitude + ',' + _self.data.myLatitude,
-      destination: '116.434446,39.90816',
+      destination: _self.data.markers[1].longitude + ',' + _self.data.markers[1].latitude,
       success: function (data) {
         var points = [];
         if (data.paths && data.paths[0] && data.paths[0].steps) {
@@ -191,7 +205,7 @@ Page({
     var myAmapFun = new amapFile.AMapWX({ key: key });
     myAmapFun.getDrivingRoute({
       origin: _self.data.myLongitude + ',' + _self.data.myLatitude,
-      destination: '116.434446,39.90816',
+      destination: _self.data.markers[1].longitude + ',' + _self.data.markers[1].latitude,
       success: function (data) {
         var points = [];
         if (data.paths && data.paths[0] && data.paths[0].steps) {
@@ -233,7 +247,7 @@ Page({
     var myAmapFun = new amapFile.AMapWX({ key: key });
     myAmapFun.getTransitRoute({
       origin: _self.data.myLongitude + ',' + _self.data.myLatitude,
-      destination: '116.434446,39.90816',
+      destination: _self.data.markers[1].longitude + ',' + _self.data.markers[1].latitude,
       city: '北京',
       success: function (data) {
         if (data && data.transits) {
@@ -268,7 +282,7 @@ Page({
     var myAmapFun = new amapFile.AMapWX({ key: key });
     myAmapFun.getRidingRoute({
       origin: _self.data.myLongitude + ',' + _self.data.myLatitude,
-      destination: '116.434446,39.90816',
+      destination: _self.data.markers[1].longitude + ',' + _self.data.markers[1].latitude,
       success: function (data) {
         var points = [];
         if (data.paths && data.paths[0] && data.paths[0].rides) {
