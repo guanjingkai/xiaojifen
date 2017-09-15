@@ -1,0 +1,73 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-cells__title">2017-09-13</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">星巴克拿铁大杯兑换券</view>
+        <view class="weui-cell__ft">-10惠币</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">星巴克拿铁大杯兑换券</view>
+        <view class="weui-cell__ft">-10惠币</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">星巴克拿铁大杯兑换券</view>
+        <view class="weui-cell__ft">-10惠币</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">星巴克拿铁大杯兑换券</view>
+        <view class="weui-cell__ft">-10惠币</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">星巴克拿铁大杯兑换券</view>
+        <view class="weui-cell__ft">-10惠币</view>
+      </view>
+    </view>
+    <view class="weui-cells__title">2017-09-12</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">星巴克拿铁大杯兑换券</view>
+        <view class="weui-cell__ft">-10惠币</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">星巴克拿铁大杯兑换券</view>
+        <view class="weui-cell__ft">-10惠币</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">星巴克拿铁大杯兑换券</view>
+        <view class="weui-cell__ft">-10惠币</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">星巴克拿铁大杯兑换券</view>
+        <view class="weui-cell__ft">-10惠币</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">星巴克拿铁大杯兑换券</view>
+        <view class="weui-cell__ft">-10惠币</view>
+      </view>
+    </view>
+    <view class="weui-cells__title">2017-09-11</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">星巴克拿铁大杯兑换券</view>
+        <view class="weui-cell__ft">-10惠币</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">星巴克拿铁大杯兑换券</view>
+        <view class="weui-cell__ft">-10惠币</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">星巴克拿铁大杯兑换券</view>
+        <view class="weui-cell__ft">-10惠币</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">星巴克拿铁大杯兑换券</view>
+        <view class="weui-cell__ft">-10惠币</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">星巴克拿铁大杯兑换券</view>
+        <view class="weui-cell__ft">-10惠币</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -48,11 +48,15 @@
         <text class='quan-info-title'>可用时段</text>
         <text class='quan-info-value'>周一至周日 全天</text>
       </view>
+      <view class='quan-info'>
+        <text class='quan-info-title'>使用限制</text>
+        <text class='quan-info-value'>消费满100元可用；不可与其他优惠共享</text>
+      </view>
     </view>
 
   </view>
   <view class="weui-panel weui-panel_access">
-    <view class="weui-panel__hd">试用门店</view>
+    <view class="weui-panel__hd">适用门店</view>
     <view class="weui-panel__bd">
      <view class='quan-info'>
         <text class='quan-info-title'>全店通用</text>
@@ -68,7 +72,7 @@
 
   </view>
   <view class="weui-panel weui-panel_access">
-    <view class="weui-panel__hd">兑换流程</view>
+    <view class="weui-panel__hd">小云推荐</view>
     <view class="weui-panel__bd">
       <scroll-view class="bigGoodsBox" scroll-x="true">
         <view class="bigGoods" wx:for="{{bigGoodsList}}">

@@ -12,7 +12,9 @@
     "pages/lbs_list/lbs_list",
     "pages/shop_map/shop_map",
     "pages/map_route/map_route",
-    "pages/map_route_info/map_route_info"
+    "pages/map_route_info/map_route_info",
+    "pages/import_record/import_record",
+    "pages/exchange_record/exchange_record"
   ],
   "window": {
     "backgroundTextStyle": "light",

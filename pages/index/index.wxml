@@ -13,7 +13,7 @@
     </view>
 
     <view class='header-title'>导入积分兑换惠币，可以当钱花</view>
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="true" interval="3000" duration="500" vertical="true" circular="true" style='height:40px;'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="true" interval="3000" duration="500" vertical="true" circular="true" style='height:80rpx;'>
       <block wx:for="{{headerPush}}">
         <swiper-item>
           <view class="header-push">{{item}}</view>
@@ -48,9 +48,9 @@
   </view>
 
 
-  <view class="bigTitle" style="margin-top:16px;">
+  <view class="bigTitle" style="margin-top:32rpx;">
     <view class="bigTitleV">
-      <text class="bigTitle1">小编推荐</text>
+      <text class="bigTitle1">小云推荐</text>
       <text class="bigTitle2">小编为您精心挑选的优质商品</text>
     </view>
     <view class="bigTitleM" data-lanmu="1" bindtap='openGoodsList'>
@@ -72,7 +72,7 @@
       </view>
     </view>
   </scroll-view>
-  <view class="bigTitle" style="margin-top:16px;">
+  <view class="bigTitle" style="margin-top:32rpx;">
     <view class="bigTitleV">
       <text class="bigTitle1">大家都在换</text>
       <text class="bigTitle2">网罗附近正在兑换的热门商品</text>

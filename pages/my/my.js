@@ -24,6 +24,16 @@ Page({
       url: "../goods_list/goods_list?id=" + e.currentTarget.dataset.lanmu
     })
   },
+  openExchangeRecord: function (e) {
+    wx.navigateTo({
+      url: "../exchange_record/exchange_record"
+    })
+  },
+  openImportRecord: function (e) {
+    wx.navigateTo({
+      url: "../import_record/import_record"
+    })
+  },
   tabClick: function (e) {
     this.setData({
       sliderOffset: e.currentTarget.offsetLeft,
